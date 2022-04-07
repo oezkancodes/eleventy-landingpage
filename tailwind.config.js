@@ -1,10 +1,13 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,njk}'],
 	theme: {
-		container: {
-			center: true,
+		fontFamily: {
+			inter: ['inter', 'sans-serif']
 		},
-		extend: {},
+		container: {
+			center: true
+		},
+		extend: {}
 	},
-	plugins: [],
-}
+	plugins: []
+};

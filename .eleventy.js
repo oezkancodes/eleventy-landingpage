@@ -8,6 +8,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./postcss.config.js');
 	eleventyConfig.addWatchTarget('./src/css/');
 
+	/*
+		PASSTHROUGH https://www.11ty.dev/docs/copy/
+	*/
+	eleventyConfig.addPassthroughCopy('./src/static');
+
 	/* 
 		SHORTCODES https://www.11ty.dev/docs/shortcodes/
 	*/
