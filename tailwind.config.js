@@ -5,7 +5,10 @@ module.exports = {
 			inter: ['inter', 'sans-serif']
 		},
 		container: {
-			center: true
+			center: true,
+			padding: {
+				DEFAULT: '1.5rem'
+			}
 		},
 		extend: {}
 	},
