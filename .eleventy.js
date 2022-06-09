@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
 		PASSTHROUGH https://www.11ty.dev/docs/copy/
 	*/
 	eleventyConfig.addPassthroughCopy('./src/static');
+	eleventyConfig.addPassthroughCopy('./src/css/fonts.css');
 
 	/* 
 		SHORTCODES https://www.11ty.dev/docs/shortcodes/
