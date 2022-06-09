@@ -4,16 +4,50 @@ title: SEO Title
 description: SEO Description
 ---
 
-{# Hero Section #}
+{# Hero Section / Wrapper #}
 <section class="bg-slate-800 py-32">
+  {# Hero Container #}
   <div class="container grid grid-cols-12 gap-y-8 lg:gap-y-0 lg:gap-x-8">
+    {# Content Column #}
     <div class="col-span-12 lg:col-span-6 text-white my-auto">
-      <h1 class="text-3xl lg:text-5xl font-bold leading-tight">{{ hero_title }}</h1>
+      <h1>{{ hero_title }}</h1>
       <p class="my-6 text-lg lg:text-xl">{{ hero_description }}</p>
       {% button %}Lorem ipsum{% endbutton %}
     </div>
+    {# Image Column #}
     <div class="col-span-12 lg:col-span-6 flex justify-center">
-      <div class="bg-blue-700 h-[300px] lg:h-[500px] w-full rounded-xl"></div>
+      <img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1629197238245-3c7497e96b41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1684&q=80" alt="Hero">
     </div>
+  </div>
+</section>
+
+{# Services Section #}
+<section class="container py-12 lg:py-24">
+  <header class="mb-8 space-y-4">
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cumque ipsam dolorum expedita earum quis aliquam, quae veniam. Quibusdam repellendus amet assumenda soluta autem.</p>
+  </header>
+  {# Service Grid #}
+  <div class="grid grid-cols-12 gap-y-8 sm:gap-8">
+    {% for service in services %}
+      {# Service Card #}
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 flex flex-col space-y-4">
+        {# Thumbnail #}
+        <img class="w-full aspect-video object-cover object-center rounded-lg" src="{{ service.thumbnail.url }}" alt="{{ service.thumbnail.alt }}">
+        {# Title #}
+        <h3 class="text-lg font-bold">{{ service.title }}</h3>
+        {# Description #}
+        <p>{{ service.description }}</p>
+        {# Anchor #}
+        {% if service.link %}
+          <a class="inline-flex items-center space-x-2 text-blue-600" href="{{ service.link.url }}">
+            <span>{{ service.link.label }}</span>
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.3997 0.311174L10.4723 0.227055C10.7386 -0.0392112 11.1552 -0.0634176 11.4489 0.154437L11.533 0.227055L15.7756 4.4697C16.0419 4.73596 16.0661 5.15263 15.8482 5.44624L15.7756 5.53036L11.533 9.773C11.2401 10.0659 10.7652 10.0659 10.4723 9.773C10.206 9.50673 10.1818 9.09007 10.3997 8.79645L10.4723 8.71234L13.434 5.74939L0.75 5.75003C0.370304 5.75003 0.0565091 5.46787 0.00684667 5.1018L0 5.00003C0 4.62033 0.282154 4.30654 0.648229 4.25687L0.75 4.25003L13.434 4.24939L10.4723 1.28772C10.206 1.02145 10.1818 0.604785 10.3997 0.311174L10.4723 0.227055L10.3997 0.311174Z" fill="currentColor"/>
+            </svg>
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </section>

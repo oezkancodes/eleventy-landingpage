@@ -1,4 +1,54 @@
 {
   "hero_title": "Lorem ipsum dolor sit consetetur",
-  "hero_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+  "hero_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  "services": [
+    {
+      "thumbnail": {
+        "url": "https://images.unsplash.com/photo-1629654858857-615c2c8be8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80",
+        "alt": "Service"
+      },
+      "title": "Lorem, ipsum dolor",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis culpa placeat ipsum suscipit nobis?",
+      "link": {
+        "label": "Lorem, ipsum dolor",
+        "url": "#"
+      }
+    },
+    {
+      "thumbnail": {
+        "url": "https://images.unsplash.com/photo-1629654858857-615c2c8be8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80",
+        "alt": "Service"
+      },
+      "title": "Lorem, ipsum dolor",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis culpa placeat ipsum suscipit nobis?",
+      "link": {
+        "label": "Lorem, ipsum dolor",
+        "url": "#"
+      }
+    },
+    {
+      "thumbnail": {
+        "url": "https://images.unsplash.com/photo-1629654858857-615c2c8be8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80",
+        "alt": "Service"
+      },
+      "title": "Lorem, ipsum dolor",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis culpa placeat ipsum suscipit nobis?",
+      "link": {
+        "label": "Lorem, ipsum dolor",
+        "url": "#"
+      }
+    },
+    {
+      "thumbnail": {
+        "url": "https://images.unsplash.com/photo-1629654858857-615c2c8be8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80",
+        "alt": "Service"
+      },
+      "title": "Lorem, ipsum dolor",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis culpa placeat ipsum suscipit nobis?",
+      "link": {
+        "label": "Lorem, ipsum dolor",
+        "url": "#"
+      }
+    }
+  ]
 }
