@@ -6,4 +6,23 @@
   html body {
     @apply font-inter;
   }
+
+  /* Typography */
+  p,
+  a,
+  span {
+    @apply md:text-lg;
+  }
+  a {
+    @apply font-medium;
+  }
+  h1 {
+    @apply text-3xl lg:text-5xl font-bold leading-tight lg:leading-tight;
+  }
+  h2 {
+    @apply text-2xl lg:text-3xl font-bold lg:leading-snug;
+  }
+  h3 {
+    @apply text-lg lg:text-xl font-bold;
+  }
 }
